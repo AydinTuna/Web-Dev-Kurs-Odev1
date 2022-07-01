@@ -149,7 +149,7 @@ body {
 /* About */
 #about {
   background: #1abc9c;
-  padding: 5rem 2.5rem;
+  padding: 5rem 5rem;
 }
 
 #about .about-container {
@@ -194,7 +194,7 @@ body {
 }
 
 #about .about-container p span {
-  padding: 1rem 3rem;
+  padding: 1rem 5rem;
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
   font-weight: 500;

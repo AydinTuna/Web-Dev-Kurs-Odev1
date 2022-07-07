@@ -1,3 +1,3 @@
 # web-dev-kurs-odev1
 
-## I completed requirements in this homework. This site has not responsive design because this task is out of scope my homework.
+## The website has not responsive design because that task is out of scope.

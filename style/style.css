@@ -201,8 +201,16 @@ body {
   color: white;
   padding: 1.5rem 2rem;
   font-size: 1.25rem;
-  border: 0px;
+  border: 2px solid white;
   border-radius: 10px;
+}
+#contact form button:hover {
+  background: white;
+  color: #69d3be;
+  border: 2px solid #69d3be;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  font-size: 1.25rem;
 }
 
 /* Footer */
@@ -266,4 +274,28 @@ body {
 #copyright small {
   color: white;
   margin: 0;
+}
+
+.line-white {
+  display: block;
+  background: white;
+  width: 5rem;
+  height: 0.2rem;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+
+.line-dark-blue {
+  display: block;
+  background: #2c3e50;
+  width: 5rem;
+  height: 0.2rem;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+
+.font-awesome-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

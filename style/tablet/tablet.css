@@ -1,16 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* Responsive-Mobile */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 501px) and (max-width: 1280px) {
   /* Header */
   #header {
     box-sizing: border-box;
@@ -101,15 +89,15 @@ body {
     align-items: center;
     flex-direction: column;
   }
-  #portfolio .portfolio-container .grid {
-    display: grid;
-    gap: 50px 50px;
-    grid-template-columns: auto auto auto;
-    margin: 1rem 2.5rem;
-    width: 50%;
+  #portfolio .portfolio-container .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
-  #portfolio .portfolio-container .grid img {
-    width: 400px;
+  #portfolio .portfolio-container img {
+    width: 390px;
+    margin: 1.5rem 1rem;
     border-radius: 10px;
   }
   #portfolio .portfolio-container div {
@@ -128,7 +116,7 @@ body {
   /* About */
   #about {
     background: #1abc9c;
-    padding: 5rem 5rem;
+    padding: 5rem 1rem;
   }
   #about .about-container {
     display: flex;
@@ -149,14 +137,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: left;
-    margin: 0 5rem;
+    margin: 0 0.5rem;
   }
   #about .about-container p span {
-    padding: 1rem 5rem;
+    padding: 1rem 0;
     letter-spacing: 0.1rem;
     line-height: 1.5rem;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 1.25rem;
   }
   #about .about-container a {
     text-decoration: none;
@@ -202,8 +192,8 @@ body {
   }
   #contact form {
     font-size: 1.5rem;
-    margin: 2rem 0;
-    width: 50%;
+    margin: 2rem;
+    width: 90%;
   }
   #contact form input,
 #contact form textarea {
@@ -221,7 +211,7 @@ body {
   #contact form button {
     background: #69d3be;
     color: white;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.75rem;
     font-size: 1.25rem;
     border: 2px solid white;
     border-radius: 10px;
@@ -237,7 +227,7 @@ body {
 
   /* Footer */
   #footer {
-    padding: 5rem 0;
+    padding: 5rem 0 1rem 0;
     background: #2c3e50;
   }
   #footer .footer-container {
@@ -246,12 +236,13 @@ body {
   }
   #footer .footer-container .info {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
   #footer .footer-container div {
-    margin: 0 3rem;
+    margin: 0 2rem;
   }
   #footer .footer-container div ul {
     display: flex;
@@ -283,8 +274,16 @@ body {
     font-size: 1.25rem;
     margin-bottom: 3rem;
   }
+  #footer .footer-container #footer-p {
+    margin: 0;
+    width: 100%;
+  }
   #footer .footer-container #footer-p a {
     color: #1abc9c;
+  }
+  #footer .footer-container #footer-p p {
+    width: 100%;
+    text-align: center;
   }
 
   /* Copyright */
@@ -302,7 +301,7 @@ body {
     display: block;
     background: white;
     width: 7rem;
-    height: 0.25rem;
+    height: 0.3rem;
     margin: 0 1rem;
     border-radius: 5px;
   }
@@ -311,7 +310,7 @@ body {
     display: block;
     background: #2c3e50;
     width: 7rem;
-    height: 0.2rem;
+    height: 0.3rem;
     margin: 0 1rem;
     border-radius: 5px;
   }
@@ -327,32 +326,4 @@ body {
   .gif {
     display: none;
   }
-}
-/* Responsive-Tablet */
-@media screen and (min-width: 501px) and (max-width: 1280px) {
-  .container {
-    display: none;
-  }
-
-  .gif {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-/* Responsive-PC */
-@media screen and (min-width: 1281px) {
-  .container {
-    display: none;
-  }
-
-  .gif {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .gif h3 {
-    margin: 3rem;
-  }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=tablet.css.map */

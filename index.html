@@ -1,176 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <script
+            src="https://kit.fontawesome.com/49e9b25429.js"
+            crossorigin="anonymous"
+        ></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Freelancer - Theme Preview - Start Bootstrap</title>
+        <link rel="stylesheet" href="./style/main.css" />
+    </head>
 
-<head>
-    <script src="https://kit.fontawesome.com/49e9b25429.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelancer - Theme Preview - Start Bootstrap</title>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <section id="header">
+                <div class="header-container">
+                    <a id="brand" href="#">start bootstrap</a>
 
-<body>
+                    <div class="hamburger-menu">
+                        <p>MENU <i class="fa-solid fa-bars"></i></p>
+                    </div>
 
-    <div class="container">
-        <!-- Header -->
-        <section id="header">
-            <div class="header-container">
-                <a id="brand" href="#">start bootstrap</a>
-
-                <div class="hamburger-menu">
-                    <p>MENU <i class="fa-solid fa-bars"></i></p>
+                    <div class="menu">
+                        <span><a href="#portfolio">PORTFOLIO</a></span>
+                        <span><a href="#about">ABOUT</a></span>
+                        <span><a href="#contact">CONTACT</a></span>
+                    </div>
                 </div>
+            </section>
 
-                <div class="menu">
-                    <span><a href="#portfolio">PORTFOLIO</a></span>
-                    <span><a href="#about">ABOUT</a></span>
-                    <span><a href="#contact">CONTACT</a></span>
+            <!-- Personal -->
+            <section id="personel">
+                <div class="personel-container">
+                    <img src="./images/profile.svg" alt="profile" />
+                    <div>
+                        <h1>START BOOTSTRAP</h1>
+                        <div class="font-awesome-star">
+                            <div class="line-white"></div>
+                            <i class="fa-solid fa-star"></i>
+                            <div class="line-white"></div>
+                        </div>
+                        <p>Graphic Artist - Web Designer - Illustrator</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Personal -->
-        <section id="personel">
-            <div class="personel-container">
-                <img src="./images/profile.svg" alt="profile">
-                <div>
-                    <h1>START BOOTSTRAP</h1>
+            <!-- Portfolio -->
+            <section id="portfolio">
+                <div class="portfolio-container">
+                    <div>
+                        <h1>PORTFOLIO</h1>
+                        <div class="font-awesome-star">
+                            <div class="line-dark-blue"></div>
+                            <i class="fa-solid fa-star"></i>
+                            <div class="line-dark-blue"></div>
+                        </div>
+                    </div>
+
+                    <div class="images-container">
+                        <img src="./images/cabin.png" alt="cabin" />
+                        <img src="./images/cake.png" alt="cake" />
+                        <img src="./images/circus.png" alt="circus" />
+                        <img src="./images/game.png" alt="game" />
+                        <img src="./images/safe.png" alt="safe" />
+                        <img src="./images/submarine.png" alt="submarine" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section id="about">
+                <div class="about-container">
+                    <h1>ABOUT</h1>
                     <div class="font-awesome-star">
                         <div class="line-white"></div>
                         <i class="fa-solid fa-star"></i>
                         <div class="line-white"></div>
                     </div>
-                    <p>Graphic Artist - Web Designer - Illustrator</p>
-                </div>
-            </div>
-        </section>
+                    <p>
+                        <span>
+                            Freelancer is a free bootstrap theme created by
+                            Start Bootstrap. The download includes the complete
+                            source files including HTML, CSS, and JavaScript as
+                            well as optional SASS stylesheets for easy
+                            customization.
+                        </span>
 
-        <!-- Portfolio -->
-        <section id="portfolio">
-            <div class="portfolio-container">
-                <div>
-                    <h1>PORTFOLIO</h1>
+                        <span>
+                            You can create your own custom avatar for the
+                            masthead, change the icon in the dividers, and add
+                            your email address to the contact form to make it
+                            fully functional!
+                        </span>
+                    </p>
+
+                    <a href="#">
+                        <span>
+                            <i class="fa-solid fa-download"></i>
+                            Free Download!
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact">
+                <div class="contact-container">
+                    <h1>CONTACT ME</h1>
                     <div class="font-awesome-star">
-                        <div class="line-dark-blue"></div>
-                        <i class="fa-solid fa-star"></i>
-                        <div class="line-dark-blue"></div>
+                        <div class="font-awesome-star">
+                            <div class="line-dark-blue"></div>
+                            <i class="fa-solid fa-star"></i>
+                            <div class="line-dark-blue"></div>
+                        </div>
+                    </div>
+                    <form>
+                        <label for="name">Full name</label><br />
+                        <input type="text" name="name" id="name" /><br />
+
+                        <label for="email">Email address</label><br />
+                        <input type="email" name="email" id="email" /><br />
+
+                        <label for="phoneNumber">Phone number</label><br />
+                        <input type="number" name="phone" id="phone" /><br />
+
+                        <label for="message">Message</label><br />
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            resize="none"
+                        ></textarea
+                        ><br />
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <section id="footer">
+                <div class="footer-container">
+                    <div class="info">
+                        <div>
+                            <h1>LOCATION</h1>
+                            <p>
+                                2215 John Daniel Drive<br />
+                                Clark, MO 65243
+                            </p>
+                        </div>
+
+                        <div>
+                            <h1>AROUND THE WEB</h1>
+                            <ul>
+                                <li><i class="fa-brands fa-facebook-f"></i></li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </li>
+                                <li><i class="fa-solid fa-globe"></i></li>
+                            </ul>
+                        </div>
+
+                        <div id="footer-p">
+                            <h1>ABOUT FREELANCER</h1>
+                            <p>
+                                Freelance is a free to use, MIT licensed
+                                Bootstrap theme created by
+                                <a href="#">Start Bootstrap</a> .
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="images-container">
-                    <div class="grid">
-                        <div class="images grid-item"><img src="./images/cabin.png" alt="cabin"></div>
-                        <div class="images grid-item"><img src="./images/cake.png" alt="cake"></div>
-                        <div class="images grid-item"><img src="./images/circus.png" alt="circus"></div>
-                        <div class="images grid-item"><img src="./images/game.png" alt="game"></div>
-                        <div class="images grid-item"><img src="./images/safe.png" alt="safe"></div>
-                        <div class="images grid-item"><img src="./images/submarine.png" alt="submarine"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <section id="copyright">
+                <small>Copyright © Your Website 2022</small>
+            </section>
+        </div>
 
-        <!-- About -->
-        <section id="about">
-            <div class="about-container">
-                <h1>ABOUT</h1>
-                <div class="font-awesome-star">
-                    <div class="line-white"></div>
-                    <i class="fa-solid fa-star"></i>
-                    <div class="line-white"></div>
-                </div>
-                <p>
-                    <span>
-                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete
-                        source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
-                        customization.
-                    </span> 
-    
-                    <span>
-                        You can create your own custom avatar for the masthead, change the icon in the dividers, and add your
-                        email address to the contact form to make it fully functional!
-                    </span>
-                </p>
-    
-                <a href="#">
-                    <span>
-                        <i class="fa-solid fa-download"></i>
-                        Free Download!
-                    </span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <div class="contact-container">
-                <h1>CONTACT ME</h1>
-                <div class="font-awesome-star">
-                    <div class="font-awesome-star">
-                        <div class="line-dark-blue"></div>
-                        <i class="fa-solid fa-star"></i>
-                        <div class="line-dark-blue"></div>
-                    </div>
-                </div>
-                <form>
-                    <label for="name">Full name</label><br>
-                    <input type="text" name="name" id="name"><br>
-    
-                    <label for="email">Email address</label><br>
-                    <input type="email" name="email" id="email"><br>
-    
-                    <label for="phoneNumber">Phone number</label><br>
-                    <input type="number" name="phone" id="phone"><br>
-    
-                    <label for="message">Message</label><br>
-                    <textarea name="message" id="message" cols="30" rows="10" resize="none"></textarea><br>
-    
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <section id="footer">
-            <div class="footer-container">
-                <div class="info">
-                    <div>
-                        <h1>LOCATION</h1>
-                        <p>2215 John Daniel Drive<br>
-                            Clark, MO 65243</p>
-                    </div>
-    
-                    <div>
-                        <h1>AROUND THE WEB</h1>
-                        <ul>
-                            <li><i class="fa-brands fa-facebook-f"></i></li>
-                            <li><i class="fa-brands fa-twitter"></i></li>
-                            <li><i class="fa-brands fa-linkedin-in"></i></li>
-                            <li><i class="fa-solid fa-globe"></i></li>
-                        </ul>
-                    </div>
-    
-                    <div id="footer-p">
-                        <h1>ABOUT FREELANCER</h1>
-                        <p>Freelance is a free to use, MIT licensed <br> Bootstrap theme created by <a href="#">Start Bootstrap</a> .</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="copyright">
-            <small>Copyright © Your Website 2022</small>
-        </section>
-    </div>
-
-    <div class="gif">
-        <iframe src="https://giphy.com/embed/l3nWhI38IWDofyDrW" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        <h3>Work in progress. We will add responsive design. Chill bro.</h3>
-    </div>
-    <!-- JavaScript -->
-    <script src="./app.js"></script>
-
-</body>
-
+        <!-- JavaScript -->
+        <script src="./app.js"></script>
+    </body>
 </html>

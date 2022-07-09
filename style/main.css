@@ -1,0 +1,19 @@
+@import "../style/tablet/tablet.css";
+@import "../style/mobile/mobile.css";
+@import "../style/desktop/desktop.css";
+
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
